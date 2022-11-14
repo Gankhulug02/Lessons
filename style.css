@@ -1,0 +1,30 @@
+*{
+    margin:0;
+}
+body{
+    background-color: rgb(137, 176, 223);
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+#general-information{
+    background-color:white;
+    max-width: fit-content;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    display: inline-block;
+}
+#lastname{
+    border: none;
+}
+#contact-details{
+    background-color: rgb(58, 58, 293);
+    max-width: fit-content;
+    /* border-radius: 20px; */
+    padding: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    display: inline-block;
+}
