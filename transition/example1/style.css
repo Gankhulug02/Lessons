@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+}
+main{
+    margin: 50px 100px;
+}
+.box{
+    background-color: green;
+    width: 200px ;
+    height: 200px;
+}
