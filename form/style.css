@@ -1,30 +1,62 @@
 *{
     margin:0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     background-color: rgb(137, 176, 223);
 }
 main{
+    padding:50px;
     display: flex;
     justify-content: center;
 }
 #general-information{
+    color: rgb(58, 58, 293);
     background-color:white;
     max-width: fit-content;
-    padding: 20px;
+    padding: 40px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     display: inline-block;
 }
 #lastname{
-    border: none;
+
 }
 #contact-details{
     background-color: rgb(58, 58, 293);
-    max-width: fit-content;
-    /* border-radius: 20px; */
-    padding: 20px;
+    color: white;
+    padding: 40px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     display: inline-block;
+}
+div{
+    padding-top: 20px;
+}
+#contact-details ::placeholder{
+    color: white;
+}
+#contact-details .border{
+    color: white;
+}
+.border{
+    outline-style: none;
+    background-color: transparent;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-width: 0.1px;
+    color: grey;
+}
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+input{
+    padding: 10px;
+}
+input[type="button"] {
+    border-radius: 50px;
 }
