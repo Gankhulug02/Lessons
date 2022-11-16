@@ -1,0 +1,26 @@
+
+.card{
+    display: flex;
+    position: relative;
+    background-color: blue;
+    max-width: 800px;
+    height: 200px;
+}
+.image{
+     max-width: 00px;
+}
+.card-1 img{
+    object-fit: cover;
+    /* display: block;
+    position: absolute; */
+    width: 100%;
+    height: 100%;
+}
+.card-2{
+    background-color: red;
+}
+.card-2 img{
+    position: absolute;
+    height: 100%;
+    right: 0%;
+}
