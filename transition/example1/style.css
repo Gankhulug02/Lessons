@@ -1,11 +1,36 @@
 *{
-    margin: 0px;
+    /* margin: 0px; */
 }
 main{
-    margin: 50px 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 .box{
-    background-color: green;
-    width: 200px ;
+    background-color:aqua;
+    width: 600px ;
+    height: 150px;
+    border-top: 3px solid green;
+    transition-duration: 1s;
+}
+.box h2{
+    font-size: 2em;
+    padding: 20px;
+    transition-duration: 0.5s;
+}
+.box:hover {
+    box-sizing: border-box;
     height: 200px;
+    font-size: 1.5em;
+    background-color: green;
+}
+.box:hover h2{
+    padding: 40px;
+}
+input[type="checkbox"]:checked + .box{
+    font-size: 2em;
+    height: 300px;
+}
+input[type="checkbox"]{
+    display: none;
 }
