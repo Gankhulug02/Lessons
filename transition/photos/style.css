@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    background-color: green;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    flex-wrap: wrap;
+}
+.shadow{
+    opacity: 0.4;
+    position: absolute;
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
+.photo-1 .shadow{
+    transition: all 3s;
+}
+.photo{
+    width: 200px;
+    height: 200px;
+    /* background-color: black; */
+}
+.photo img{
+    max-width: 200px;
+    height: 200px;
+    filter: grayscale(100%);
+}
+.photo:hover img{
+    filter: grayscale(0%);
+}
+.photo-2 .shadow{
+    transition: top 2s;
+}
+.photo-3 .shadow{
+    transition: height 100s, width 1s;
+}
