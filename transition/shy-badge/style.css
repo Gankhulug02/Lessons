@@ -1,0 +1,36 @@
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    margin-top: 20%;
+    background-color: rgba(255, 0, 0, 0.099);
+    width: 400px;
+    height: 100px;
+    transition: all 2s;
+    /* opacity: 0.2; */
+}
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    top: -20px;
+    right: -20px;
+    transition: all 1s;
+    text-align: center;
+}
+.circle h1{
+    margin-top: 8px;
+}
+.container:hover {
+    background-color: red;
+}
+.container:hover .circle{
+    opacity: 0;
+    right: 50%;
+    top: 20%;
+    transform: translate(-50%);
+}
