@@ -12,33 +12,20 @@
         <div id="general-information">
             <h1>General Information</h1>
             <form action="register.html" method="post">
-                <div>
-                    <label for="lastname"></label>
-                    <input class="border" type="text" name="ovog" id="firstname" placeholder="First Name">
-                    
+                <div class="name">
+                    <div>
                     <label for="firstname"></label>
+                    <input class="border" type="text" name="ovog" id="firstname" placeholder="First Name">
+                    </div>
+                    <div>
+                    <label for="lastname"></label>
                     <input class="border" type="text" name="ner" id="lastname" placeholder="Last Name">
+                    </div>
                 </div>
                 <div>
                     <label for="email"></label>
                     <input class="border" type="email" name="email" id="email" placeholder="Email">
                 </div>
-                <div>
-                    <label for="password"></label>
-                    <input class="border" type="password" name="pass" id="password" placeholder="Password">
-                </div>
-                <!-- <div>
-                    <input id="forgot" type="checkbox" />
-                    <label for="forgot"> show password </label>
-                </div>
-                <div>
-                    <input type="radio" id="male" name="gender" value="male" />
-                    <label for="male">male</label>
-
-                    <input type="radio" id="female" name="gender" value="female" />
-                    <label for="female">female</label>
-                </div> -->
-
                 <div>
                     <label for="date"></label>
                     <input class="border" type="date"/>
@@ -49,11 +36,11 @@
                 </div>
                 <div>
                     <label for="district"></label>
-                    <select>
-                        <option value="sukhbaatar">position</option>
+                    <select class="border position">
+                        <option value="sukhbaatar">Position</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
-                        <option value="3">3</option>
+                        <option value="3">4</option>
                     </select>
                 </div>
             </form>
@@ -69,32 +56,32 @@
                     <label for="additional-information"></label>
                     <input class="border" type="text" name="additional-information" id="additional-information" placeholder="Additional Information">
                 </div>
-                <div class="flex">
+                <div class="flex w-105">
                     <label for="zip"></label>
-                    <input class="border" class="flex-1" type="number" name="zip" id="zip" placeholder="Zip Code">
+                    <input class="border zip" class="flex-1" type="number" name="zip" id="zip" placeholder="Zip Code">
 
                     <label for="place"></label>
-                    <select class="flex-1 border" >
-                        <option value="sukhbaatar">place</option>
+                    <select class="border place" >
+                        <option value="sukhbaatar">Place</option>
                         <option value="baynzurkh">1</option>
                         <option value="chingiltei">2</option>
                         <option value="busad">3</option>
                     </select>
                 </div>
                 <div>
-                    <select class="border" >
-                        <option value="sukhbaatar">country</option>
+                    <select class="border w-105 country" >
+                        <option value="sukhbaatar">Country</option>
                         <option value="baynzurkh">1</option>
                         <option value="chingiltei">2</option>
                         <option value="busad">3</option>
                     </select>
                 </div>
-                <div>
+                <div class="flex w-105">
                     <label for="code"></label>
-                    <input class="border" type="number" name="code" id="code" placeholder="Code" >
+                    <input class="border w code" type="number" name="code" id="code" placeholder="Code" >
 
                     <label for="phone-number"></label>
-                    <input class="border" type="number" name="phone-number" id="phone-number" placeholder="Phone Number" >
+                    <input class="border w phone-number" type="number" name="phone-number" id="phone-number" placeholder="Phone Number" >
                 </div>
                 <div>
                     <input type="checkbox" name="checkbox" id="checkbox">

@@ -19,9 +19,6 @@ main{
     border-top-left-radius: 20px;
     display: inline-block;
 }
-#lastname{
-
-}
 #contact-details{
     background-color: rgb(58, 58, 293);
     color: white;
@@ -46,7 +43,8 @@ div{
     border-top: none;
     border-right: none;
     border-width: 0.1px;
-    color: grey;
+    border-color: rgb(226, 226, 226);
+    width: 100%;
 }
 .flex{
     display: flex;
@@ -59,4 +57,29 @@ input{
 }
 input[type="button"] {
     border-radius: 50px;
+}
+#firstname{
+    width: 95%;
+}
+.name{ 
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.position{
+    width: 105%;
+    padding: 9px;
+    color: black;
+}
+.country{
+    padding: 10px;
+}
+.w-105{
+    width: 105%;
+}
+.place{
+    margin-left: 20px;
+}
+.code{
+    margin-right: 20px;
 }
