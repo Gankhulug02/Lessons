@@ -475,6 +475,74 @@
 
 //6. Дараах загварыг хэвлэхийн тулд console.log() болон escape тэмдэгтүүдийг ашиглана уу.
 
-let a = " 1 2 3 4 5 \n 2 3 4 5 1 \n 3 4 5 1 2 \n 4 5 1 2 3 \n 5 1 2 3 4"
+// let a = " 1 2 3 4 5 \n 2 3 4 5 1 \n 3 4 5 1 2 \n 4 5 1 2 3 \n 5 1 2 3 4"
 
-console.log(a);
+// console.log(a);
+
+//Гараас огноо, сар, өдөр гэсэн утгуудыг аван дараах форматын дагуу харуулна уу. Жишээ 2009, 12, 31 гэж орж ирвэл “2009-12-31”. Анхаарах зүйл хэрвээ өдөр, сар нэг оронтой байвал 2 оронтой болгох буюу сар нь  1 гэж байвал “01” болгох, гараас оруулж байгаа утгыг шалгах
+
+// let ognoo; 
+// let sar;
+// let udur;
+// let utga;
+
+// ognoo = Number (prompt("Ognoo"))
+// sar = Number (prompt("Sar"))
+// udur = Number (prompt("Udur"))
+
+// if ( sar <= 9 ){
+//     sar = ("0" + sar)
+// }
+// if ( udur <= 9){
+//     udur = ("0" + udur )
+// }
+
+// console.log (`"${ognoo}-${sar}-${udur}"`)
+
+//2. Гараас утасны дугаар ( 99001234 ) аван шалгах, зөв дугаар бол харгалзах операторыг (Unitel, Mobicom, G-Mobile, Skytel) хэвлэх , буруу дугаар бол буруу гэсэн мессежийг өгөх
+
+let a = 88888888;
+let dugaar ;
+let operator;
+
+dugaar = (Math.floor(a/1000000))
+
+if ( dugaar === 60){
+    operator = "Ondo"
+} else if ( dugaar === 66){
+    operator = "Ondo"
+} else if ( dugaar === 96){
+    operator = "Skytel"
+} else if ( dugaar === 91){
+    operator = "Skytel"
+} else if ( dugaar === 90){
+    operator = "Skytel"
+} else if ( dugaar === 98){
+    operator = "G-Mobile"
+} else if ( dugaar === 93){
+    operator = "G-Mobile"
+} else if ( dugaar === 83){
+    operator = "G-Mobile"
+} else if ( dugaar === 80){
+    operator = "Unitel"
+} else if ( dugaar === 86){
+    operator = "Unitel"
+} else if ( dugaar === 88){
+    operator = "Unitel"
+} else if ( dugaar === 89){
+    operator = "Unitel"
+} else if ( dugaar === 85){
+    operator = "Mobicom"
+} else if ( dugaar === 84){
+    operator = "Mobicom"
+} else if ( dugaar === 89){
+    operator = "Mobicom"
+} else if ( dugaar === 94){
+    operator = "Mobicom"
+} else {
+    operator = "Ta dugaaraa shalgana uu!!!"
+}
+
+console.log
+console.log (Math.floor(dugaar));
+console.log (operator)
