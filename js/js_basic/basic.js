@@ -243,7 +243,10 @@
 // let n ;
 // let day;
 // let called;
+
 // n = Number(prompt ("ta uduruu oruulna uu"));
+
+// console.log (typeof n)
 
 // switch (n) {
 //     case 1:{
@@ -316,19 +319,13 @@
 // let a;
 
 // too = prompt ("too oruul")
-// a = too%10
+// a = too%2
 // console.log(a)
-// if (a == 2){
-//     b = "tegsh";
-// } else if (a == 4){
-//     b = "tegsh";
-// } else if (a == 6){
-//     b = "tegsh";
-// } else if (a == 8){
+// if (a == 0){
 //     b = "tegsh";
 // } else {
 //     b = "sondgoi";
-// } 
+// }
 // console.log(b)
 //3. Өгөгдсөн эерэг тоо нь 3-ын үржвэр эсвэл 7-ын үржвэр эсэхийг шалгана уу
 // let n;
@@ -388,3 +385,96 @@
 
 // console.log (age)
 // console.log (old)
+//5. weight, height гэсэн 2 хувьсагчид утга оруулахад тухайн хэмжээнээс хамааран биеийн жингийн индексийг тооцож тухайн индекс-д харгалзах утгыг хэвлэнэ. 
+
+// let weight ;
+// let height ;
+// let BMI ;
+// let mass ;
+// let index ;
+
+// weight = Number (prompt ("Та биеийн жингээ оруулна уу."));
+// height = Number (prompt ("Та биеийн өндөрөө оруулна уу."));
+
+// BMI = ((weight / (height * height)) * 10000 )
+
+// if (BMI < 18.5){
+//     index = "Under Weight"
+// } else if (BMI < 24.9){
+//     index = "Normal"
+// } else if (BMI < 29.9){
+//     index = "Over Weight"
+// } else if (BMI < 34.9){
+//     index = "Obese"
+// } else if (BMI > 35){
+//     index = "Extremly Obese"
+// } 
+
+// console.log (BMI)
+// console.log (index)
+
+//Өгөгдсөн жилийг өндөр жил мөн эсэхийг шалгаад хэрвээ мөн бол өндөр жил мөн үгүй бол үгүй гэж хариулна уу.
+
+// let years;
+// let hariu_1;
+// let hariu_2;
+// let hariu_3;
+// let leap;
+
+// years = Number (prompt("Ta jilee oruulna uu") )
+
+
+// if ( years % 400 === 0){
+//     leap = "Leap Year"
+// } else if (years % 100 === 0){
+//     leap = "Not Leap Year"
+// } else if (years % 4 === 0){
+//     leap = "Leap Year"
+// }
+
+// console.log (leap)
+
+// let asd = Number.isInteger(123) //buhel esehiig shalgana
+
+//1. Өөрийн нэрийн урт, овог нэрийнхээ уртыг харьцуулж үз.
+
+// let firstName = ("gankhulug");
+// let lastName = ("urtnasan");
+
+// console.log(firstName.length); 
+// console.log(lastName.length); 
+
+// console.log(firstName.toUpperCase()); 
+// console.log(lastName.toLowerCase()); 
+
+//4. 'Pinecone academy- н' болон ' leap хөтөлбөрт тавтай морилго уу? ' - г нэг мөр болгон нэгтгэнэ үү. “concat()”
+
+// let a = "Pinecone academy " ;
+// let b = a.concat("leap хөтөлбөрт тавтай морилго уу?") ;
+
+// console.log (a);
+// console.log (b);
+
+//5. firstName, LastName, country, city, age, job хувьсагч зарлан эдгээр хувьсагч орсон өгүүлбэр зохионо уу. Жишээ нь:  Намайг Болд гэдэг. Би Сүхбаатар дүүрэгт амьдардаг.  гэх мэт
+
+// let firstName = ("Gankhulug");
+// let lastName = ("Urtnasan");
+// let country = ("Mongol");
+// let age = ("18");
+// let job = ("Software Engineer");
+// let city = ("Ulaanbaatar");
+
+// firstName = prompt ("Neree oruulna uu");
+// lastName = prompt ("Ovogoo oruulna uu");
+// country = prompt ("Country");
+// age = Number (prompt ("Nasaa Oruulna uu"));
+// job = prompt ("Ajilaa oruulna uu");
+// city = prompt ("City");
+
+// console.log (`Namaig ${firstName} gedeg. Bi ${country} oronii ${city} hotod amidargad bi ${age} nastai` )\
+
+//6. Дараах загварыг хэвлэхийн тулд console.log() болон escape тэмдэгтүүдийг ашиглана уу.
+
+let a = " 1 2 3 4 5 \n 2 3 4 5 1 \n 3 4 5 1 2 \n 4 5 1 2 3 \n 5 1 2 3 4"
+
+console.log(a);
