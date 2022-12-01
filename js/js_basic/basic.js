@@ -501,48 +501,52 @@
 
 //2. Гараас утасны дугаар ( 99001234 ) аван шалгах, зөв дугаар бол харгалзах операторыг (Unitel, Mobicom, G-Mobile, Skytel) хэвлэх , буруу дугаар бол буруу гэсэн мессежийг өгөх
 
-let a = 88888888;
-let dugaar ;
-let operator;
+// let a = 88888888;
+// let dugaar ;
+// let operator;
 
-dugaar = (Math.floor(a/1000000))
+// a = Number (prompt ("Ta dugaaraa oruulna uu!"));
 
-if ( dugaar === 60){
-    operator = "Ondo"
-} else if ( dugaar === 66){
-    operator = "Ondo"
-} else if ( dugaar === 96){
-    operator = "Skytel"
-} else if ( dugaar === 91){
-    operator = "Skytel"
-} else if ( dugaar === 90){
-    operator = "Skytel"
-} else if ( dugaar === 98){
-    operator = "G-Mobile"
-} else if ( dugaar === 93){
-    operator = "G-Mobile"
-} else if ( dugaar === 83){
-    operator = "G-Mobile"
-} else if ( dugaar === 80){
-    operator = "Unitel"
-} else if ( dugaar === 86){
-    operator = "Unitel"
-} else if ( dugaar === 88){
-    operator = "Unitel"
-} else if ( dugaar === 89){
-    operator = "Unitel"
-} else if ( dugaar === 85){
-    operator = "Mobicom"
-} else if ( dugaar === 84){
-    operator = "Mobicom"
-} else if ( dugaar === 89){
-    operator = "Mobicom"
-} else if ( dugaar === 94){
-    operator = "Mobicom"
-} else {
-    operator = "Ta dugaaraa shalgana uu!!!"
-}
+// dugaar = (Math.floor(a/1000000))
 
-console.log
-console.log (Math.floor(dugaar));
-console.log (operator)
+// if ( dugaar === 60){
+//     operator = "Ondo"
+// } else if ( dugaar === 66){
+//     operator = "Ondo"
+// } else if ( dugaar === 96){
+//     operator = "Skytel"
+// } else if ( dugaar === 91){
+//     operator = "Skytel"
+// } else if ( dugaar === 90){
+//     operator = "Skytel"
+// } else if ( dugaar === 98){
+//     operator = "G-Mobile"
+// } else if ( dugaar === 93){
+//     operator = "G-Mobile"
+// } else if ( dugaar === 83){
+//     operator = "G-Mobile"
+// } else if ( dugaar === 80){
+//     operator = "Unitel"
+// } else if ( dugaar === 86){
+//     operator = "Unitel"
+// } else if ( dugaar === 88){
+//     operator = "Unitel"
+// } else if ( dugaar === 89){
+//     operator = "Unitel"
+// } else if ( dugaar === 85){
+//     operator = "Mobicom"
+// } else if ( dugaar === 84){
+//     operator = "Mobicom"
+// } else if ( dugaar === 89){
+//     operator = "Mobicom"
+// } else if ( dugaar === 94){
+//     operator = "Mobicom"
+// } else {
+//     operator = "Ta dugaaraa shalgana uu!!!"
+// }
+
+// console.log ("Tanii dugaar", a);
+// console.log (Math.floor(dugaar));
+// console.log (operator)
+
+//
