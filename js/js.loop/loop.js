@@ -71,14 +71,29 @@
 // let n = 2;
 // let a;
 
-// a =Number (prompt("Ta toogoo oruulna uu"))
+// a = Number (prompt("Ta toogoo oruulna uu"))
 
 // while ( n <= a) {
 //     // console.log(total)
-//     // console.log(n)
+//     console.log(n)
 //     total += n
 //     n += 2;
 // }
 
 // console.log (total)
 
+//13. Өгөдсөн тооны цифрүүдийг үгээр хэвлэх программ бич
+
+let n = 1234;
+let a ;
+
+// console.log (n%10)
+n = n*10
+while(n > 1 ){
+    // console.log(n);
+    n = n/10
+    a = n%10
+    console.log(Math.floor(a))
+    n = ( n.toFixed(1) );
+    // console.log(n);
+}
