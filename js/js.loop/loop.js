@@ -108,49 +108,66 @@
 
 // huulav
 
-let num = parseInt(prompt("Toogoo oruul"))
-let rev = 0;
-let rem = 0;
-let i = "*";
-let o = "  ";
+// let num = parseInt(prompt("Toogoo oruul"))
+// let rev = 0;
+// let rem = 0;
+// let i = "*";
+// let o = "  ";
 
-while (num > 0) {
-    rem = num % 10;
-    // console.log (rem)
-    rev = (rev*10)+rem;
-    // console.log (rev)
+// while (num > 0) {
+//     rem = num % 10;
+//     // console.log (rem)
+//     rev = (rev*10)+rem;
+//     // console.log (rev)
     
-    num = parseInt(num/10)
-    // console.log (num)
-    console.log(i)
-    i = (i + "**")
-}
+//     num = parseInt(num/10)
+//     // console.log (num)
+//     console.log(i)
+//     i = (i + "**")
+// }
 
-// console.log(rev);
+// // console.log(rev);
 
-// Square
+// // Square
 
-let row;
-let a;
+// let row;
+// let a;
 
-row = Number (prompt(""));
-a = row;
+// row = Number (prompt(" Durvuljinii unduriig ugnu uu"));
+// a = row;
 
-// console.log (row);
-// console.log (typeof(row));
+// // console.log (row);
+// // console.log (typeof(row));
  
-while ( row >= 1) {
-    if( row == a){
-        console.log ("******")
-    } else if (row > 1 ){
-        console.log (`*    *`)
-    } else if (row == 1 ) {
-        console.log ("******")
-    } 
-    row --;
-    console.log ("");
-}
+// while ( row >= 1) {
+//     if( row == a){
+//         console.log ("******")
+//     } else if (row > 1 ){
+//         console.log (`*    *`)
+//     } else if (row == 1 ) {
+//         console.log ("******")
+//     } 
+//     row --;
+//     console.log ("");
+// }
 
 // //Pyramid
 
-// let row;
+// let a = parseInt (prompt("ta too oruulnu"));
+let a = 20;
+let b = 11111111111111111111; 
+let c = a;
+let d = "*";
+
+console.log (a);
+
+while (a > 0){
+    if (a == c ){ 
+        console.log(b + `   `+ '$')
+    } else if ( a < c){
+        d = d+"**"
+        b = parseInt (b/10);
+        console.log (b+ `   ` + d)
+    }
+    a --;
+}
