@@ -1,6 +1,6 @@
 // // Loop 
 
-//While 
+// While 
 
 // let count = 1;
 // while ( count <= 100) {
@@ -8,7 +8,7 @@
 //     count = count + 2
 // }
 
-//Do While
+// Do While
 
 // let count = 0
 
@@ -25,7 +25,7 @@
 //     count = count + 2
 // }
 
-//tegsh too
+// tegsh too
 
 // let count = 2;
 // while ( count <= 10) {
@@ -33,7 +33,7 @@
 //     count = count + 2
 // }
 
-//100 hurtelh toonii niilber 
+// 100 hurtelh toonii niilber 
 
 // let total = 0;
 // let n = 1;
@@ -45,7 +45,7 @@
 
 // console.log (total)
 
-//8. N тооны факториал олох программ бич
+// 8. N тооны факториал олох программ бич
 
 // let total = 1;
 // let n = 1;
@@ -57,7 +57,7 @@
 
 // console.log (total)
 
-//6. Өгөгдсөн тоог анхны мөн эсэхийг олох программ бич
+// 6. Өгөгдсөн тоог анхны мөн эсэхийг олох программ бич
 
 // let a = parseInt(prompt ("ta duriin toogoo oruulna u"));
 
@@ -65,35 +65,92 @@
 
 // console.log (Math.pow(2, 32));
 
-//11. N хүртэлх тооны тэгш тоо хэвлэх болон түүний нийлбэрийг олох программ бич
+// 11. N хүртэлх тооны тэгш тоо хэвлэх болон түүний нийлбэрийг олох программ бич
 
 // let total = 0;
-// let n = 2;
+// let n = 1;
 // let a;
 
 // a = Number (prompt("Ta toogoo oruulna uu"))
 
 // while ( n <= a) {
-//     // console.log(total)
+//     // console.log(total)    
 //     console.log(n)
 //     total += n
-//     n += 2;
+//     n += 1;
 // }
 
 // console.log (total)
 
-//13. Өгөдсөн тооны цифрүүдийг үгээр хэвлэх программ бич
+// 13. Өгөдсөн тооны цифрүүдийг reverse bolgodog ni
 
-let n = 1234;
-let a ;
+// let n = parseInt(prompt("Toogoo oruul"))
+// let c = n;
+// let a = 0;
+// let b  = 0;
 
-// console.log (n%10)
-n = n*10
-while(n > 1 ){
-    // console.log(n);
-    n = n/10
-    a = n%10
-    console.log(Math.floor(a))
-    n = ( n.toFixed(1) );
-    // console.log(n);
+// while(n > 0 ){
+//     a = n % 10;
+
+//     b = (b*10)+a;
+
+//     n = parseInt(n/10)
+// }
+// 13 aas palindromic number check
+
+// console.log (b);
+
+// if (b === c ){
+//     console.log("True")
+// } else {
+//     console.log ("false")
+// }
+
+// huulav
+
+let num = parseInt(prompt("Toogoo oruul"))
+let rev = 0;
+let rem = 0;
+let i = "*";
+let o = "  ";
+
+while (num > 0) {
+    rem = num % 10;
+    // console.log (rem)
+    rev = (rev*10)+rem;
+    // console.log (rev)
+    
+    num = parseInt(num/10)
+    // console.log (num)
+    console.log(i)
+    i = (i + "**")
 }
+
+// console.log(rev);
+
+// Square
+
+let row;
+let a;
+
+row = Number (prompt(""));
+a = row;
+
+// console.log (row);
+// console.log (typeof(row));
+ 
+while ( row >= 1) {
+    if( row == a){
+        console.log ("******")
+    } else if (row > 1 ){
+        console.log (`*    *`)
+    } else if (row == 1 ) {
+        console.log ("******")
+    } 
+    row --;
+    console.log ("");
+}
+
+// //Pyramid
+
+// let row;
