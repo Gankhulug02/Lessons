@@ -174,49 +174,49 @@
 
 // 13. Өгөдсөн тооны цифрүүдийг урвуугаар үгээр хэвлэх программ бич
 
-// let n = parseInt(prompt("Toogoo oruul"))
-// let c = n;
-// let a = 0;
-// let b  = 0;
+let n = parseInt(prompt("Toogoo oruul"))
+let c = n;
+let a = 0;
+let b  = 0;
 
-// while(n > 0 ){
-//     a = n % 10;
+while(n > 0 ){
+    a = n % 10;
 
-//     b = (b*10)+a;
+    b = (b*10)+a;
 
-//     n = parseInt(n/10)
-// }
+    n = parseInt(n/10)
+}
 
-// console.log(b)
+console.log(b)
 
-// let num = "";
-// let d;
+let num = "";
+let d;
 
-// while(b > 0){
-//     d = b%10
-//     if(d==1){
-//         d = "one "
-//     } else if (d==0){
-//         d = "zero "
-//     } else if (d==2){
-//         d = "two "
-//     } else if (d==3){
-//         d = "three "
-//     } else if (d==4){
-//         d = "four "
-//     } else if (d==5){
-//         d = "five "
-//     } else if (d==6){
-//         d = "six "
-//     } else if (d==7){
-//         d = "seven "
-//     } else if (d==8){
-//         d = "eight "
-//     } else if (d==9){
-//         d = "nine "
-//     }
-//     num = num + d
-//     // console.log(b)
-//     b = Math.floor(b/10)
-// }
-// console.log  (num)
+while(b > 0){
+    d = b%10
+    if(d==1){
+        d = "one "
+    } else if (d==0){
+        d = "zero "
+    } else if (d==2){
+        d = "two "
+    } else if (d==3){
+        d = "three "
+    } else if (d==4){
+        d = "four "
+    } else if (d==5){
+        d = "five "
+    } else if (d==6){
+        d = "six "
+    } else if (d==7){
+        d = "seven "
+    } else if (d==8){
+        d = "eight "
+    } else if (d==9){
+        d = "nine "
+    }
+    num = num + d
+    // console.log(b)
+    b = Math.floor(b/10)
+}
+console.log  (num)
