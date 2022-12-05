@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    margin-top: 10%;
+}
 .search-input{
     margin: auto;
     border-radius: 100px;
