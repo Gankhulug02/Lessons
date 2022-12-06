@@ -4,7 +4,7 @@ let i=0;
 let count=0;
 
 while(i < data.length){
-    if(data[i]=== 'нүүрс'){
+    if(data[i]=== 'байна.'){
         count ++
     }
     i++
