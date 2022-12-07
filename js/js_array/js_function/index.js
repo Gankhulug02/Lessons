@@ -111,8 +111,21 @@ console.log(arrAdd(d))
 
 console.log("8. Өгөгдсөн тэмдэгт мөрийн бүх үсгийг том үсэг болгох функц бич.")
 
-d = ['mongol','china','russia','german','sweden','turkey',]
+d = ['mongol','china','russiam','german','sweden','turkey',]
 
 let arrUpper = (arrUpper) => {
-    
+    for (let i = 0; i < arrUpper.length; i++){
+        for(let j=0; j < arrUpper[i].length; j++){
+            if(arrUpper[i][j] == 'm'){
+                let a = arrUpper[i].slice(1)
+                console.log("M"+a)
+            } 
+        }
+    }
+    return arrUpper
 }
+// let a = (d[0].slice(0));
+// a.unshift(1);
+// console.log("M"+a)
+// console.log(d);
+console.log(arrUpper(d))
