@@ -111,21 +111,78 @@ console.log(arrAdd(d))
 
 console.log("8. Өгөгдсөн тэмдэгт мөрийн бүх үсгийг том үсэг болгох функц бич.")
 
-d = ['mongol','china','russiam','german','sweden','turkey',]
+d = 'honi uher ymaa';
+a = d.split("");
 
-let arrUpper = (arrUpper) => {
-    for (let i = 0; i < arrUpper.length; i++){
-        for(let j=0; j < arrUpper[i].length; j++){
-            if(arrUpper[i][j] == 'm'){
-                let a = arrUpper[i].slice(1)
-                console.log("M"+a)
-            } 
-        }
+
+let arrUpper = (arr) => {
+    let retArr = "";
+    for (let i = 0; i < arr.length; i++){
+        // for(let j=0; j < arrUpper[i].length; j++){
+            if(arr[i] == 'a'){
+                retArr += 'A'
+           } else if (arr[i] == 'b'){
+               retArr += 'B'
+           } else if (arr[i] == 'c'){
+               retArr += 'C'
+           } else if (arr[i] == 'd'){
+               retArr += 'D'
+           } else if (arr[i] == 'e'){
+               retArr += 'E'
+           } else if (arr[i] == 'f'){
+               retArr += 'F'
+           } else if (arr[i] == 'g'){
+               retArr += 'G'
+           } else if (arr[i] == 'h'){
+               retArr += 'H';
+           } else if (arr[i] == 'i'){
+               retArr += 'I'
+           } else if (arr[i] == 'g'){
+               retArr += 'G'
+           } else if (arr[i] == 'k'){
+               retArr += 'K'
+           } else if (arr[i] == 'l'){
+               retArr += 'L'
+           } else if (arr[i] == 'm'){
+               retArr += 'M'
+           } else if (arr[i] == 'n'){
+               retArr += 'N'
+           } else if (arr[i] == 'o'){
+               retArr += 'O';
+           } else if (arr[i] == 'p'){
+               retArr += 'P'
+           } else if (arr[i] == 'q'){
+               retArr += 'Q'
+           } else if (arr[i] == 'r'){
+               retArr += 'R'
+           } else if (arr[i] == 's'){
+               retArr += 'S'
+           } else if (arr[i] == 't'){
+               retArr += 'T'
+           } else if (arr[i] == 'u'){
+               retArr += 'U'
+           } else if (arr[i] == 'v'){
+               retArr += 'V'
+           } else if (arr[i] == 'w'){
+               retArr += 'W'
+           } else if (arr[i] == 'x'){
+               retArr += 'X'
+           } else if (arr[i] == 'y'){
+               retArr += 'Y'
+           } else if (arr[i] == 'z'){
+               retArr += 'Z'
+           } else if (arr[i] == ' '){
+            retArr += ' '
+        } 
+        // }
     }
-    return arrUpper
+    return retArr;
 }
 // let a = (d[0].slice(0));
 // a.unshift(1);
 // console.log("M"+a)
 // console.log(d);
-console.log(arrUpper(d))
+;
+console.log(arrUpper(d));
+let txt = "adfrff";
+console.log(d.toUpperCase())
