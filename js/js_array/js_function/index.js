@@ -111,7 +111,7 @@ console.log(arrAdd(d))
 
 console.log("8. Өгөгдсөн тэмдэгт мөрийн бүх үсгийг том үсэг болгох функц бич.")
 
-d = 'honi uher ymaa';
+d = 'honi uher ymaa mori temee ';
 a = d.split("");
 
 
@@ -137,8 +137,8 @@ let arrUpper = (arr) => {
                retArr += 'H';
            } else if (arr[i] == 'i'){
                retArr += 'I'
-           } else if (arr[i] == 'g'){
-               retArr += 'G'
+           } else if (arr[i] == 'j'){
+               retArr += 'J'
            } else if (arr[i] == 'k'){
                retArr += 'K'
            } else if (arr[i] == 'l'){
