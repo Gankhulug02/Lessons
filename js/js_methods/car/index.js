@@ -35,14 +35,15 @@ carBrands = [
 //3. нийт хэдэн ширхэг мөр дата байгаа, хэдэн улсын brand байгааг харуулах
     let country = "" ;
     let b = 0;
+    let c = "";
 
     for (let i = 0; i < carBrands.length; i++){
+        b = 0;
         for (let j = 0; j<carBrands.length; j++){
-            b = 0;
             if( carBrands[i][1] == carBrands[j][1] ){
                 b++
-                console.log(carBrands[i][1] + b);
             }
         }
+        c =c +" "+ (carBrands[i][1] + b)
     }
-// console.log("Нийт " + carBrands.length + " мөр дата," + country);
+console.log("Нийт " + carBrands.length + " мөр дата," + c);
