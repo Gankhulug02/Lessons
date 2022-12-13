@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 body {
     text-align: center;
   }
@@ -20,3 +22,6 @@ body {
     background-color: rgba(82, 148, 82, 0.8);
     color: #fff;
   }
+h1{
+  font-family: 'Orbitron', sans-serif;
+}

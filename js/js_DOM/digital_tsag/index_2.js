@@ -23,13 +23,13 @@ let milliseconds = 0;
 let increat =() => {
     milliseconds ++;
     // body.style.backgroundColor = getColor();
-    h.style.color = getColor();
-    startBtn.style.backgroundColor = getColor();
-    stopBtn.style.backgroundColor = getColor();
-
+    // startBtn.style.backgroundColor = getColor();
+    // stopBtn.style.backgroundColor = getColor();
+    
     if(milliseconds >= 100){
         milliseconds = 00
         seconds ++
+        // h.style.color = getColor();
     }
     if(seconds >= 60){
         seconds = 00;
@@ -38,7 +38,7 @@ let increat =() => {
     if(minutes >= 60){
         minutes =00;
     }
-    h1.textContent = `Time ${minutes}:${seconds}:${milliseconds}`
+    h1.textContent = ` ${minutes} : ${seconds} : ${milliseconds}`
 }
 
 const getColor = () => {

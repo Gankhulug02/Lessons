@@ -26,6 +26,7 @@ const increment = () => {
   seconds = new Date().getSeconds();
   minutes = new Date().getMinutes();
   doil = new Date().getMilliseconds();
+  doil = Math.floor(doil/10)
   h1.innerHTML = `<span style="color: red">Time</span>: ${minutes}:${seconds}:${doil}`;
 };
 const clear = () => {
