@@ -98,6 +98,8 @@ img {
 }
 .text {
   border: none;
+  min-width: 70%;
+  height: fit-content;
   background-color: transparent;
   padding: 0.3rem;
   font-size: 1.5rem;
