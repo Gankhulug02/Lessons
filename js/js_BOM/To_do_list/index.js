@@ -70,7 +70,7 @@ const edit = (e)=>{
     let b = e.firstChild.classList;
     a.setAttribute("value", a.value);
 
-    if(b.contains("fa-pen")){
+    if(a.hasAttribute("readonly")){
         b.remove("fa-pen");
         b.add("fa-plus");
         a.removeAttribute("readonly")
