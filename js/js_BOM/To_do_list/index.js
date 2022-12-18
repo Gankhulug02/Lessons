@@ -44,7 +44,7 @@ const taskAdd = () => {
     inputText.value = "";
     //Task nemeh
     tasks = taskList.children.length
-    task.innerHTML = `${tasks} days left`
+    task.innerHTML = `${tasks} tasks left`
 }
 
 addBtn.addEventListener("click",taskAdd);
