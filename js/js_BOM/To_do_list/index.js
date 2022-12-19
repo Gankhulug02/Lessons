@@ -2,6 +2,9 @@ const addBtn = document.getElementById("add");
 const taskList = document.getElementById("tasks");
 const inputText = document.getElementById("to-do-input");
 
+//Task
+const task = document.getElementsByTagName("h3")[2];
+let tasks = 0;
 //Date
 const h3 = document.getElementsByTagName("h3")[1];
 let count = 0;
@@ -14,6 +17,9 @@ const increment = () => {
   month = new Date().getMonth()+1;
   year = new Date().getFullYear();
   h3.innerHTML = `${year}:${month}:${day}`;
+  //Task
+  tasks = taskList.children.length
+  task.innerHTML = `${tasks} days left`
 };
 timer = setInterval(increment, 10);
 
@@ -30,9 +36,6 @@ const cardItem = (text) =>{
     </div>`;
     return item;
 }
-//Task
-const task = document.getElementsByTagName("h3")[2];
-let tasks = 0;
 
 const taskAdd = () => {
     let text = inputText.value;
@@ -43,8 +46,7 @@ const taskAdd = () => {
     }
     inputText.value = "";
     //Task nemeh
-    tasks = taskList.children.length
-    task.innerHTML = `${tasks} tasks left`
+
 }
 
 addBtn.addEventListener("click",taskAdd);
@@ -57,9 +59,7 @@ const ustgah = (e) => {
     const parent = e.parentNode.parentNode.parentNode;
     const child = e.parentNode.parentNode;
     parent.removeChild(child)
-    //Task hasah
-    tasks --
-    task.innerHTML = `${tasks} days left`}
+}
 
 const check = (e)=>{
     let a=e.parentNode.parentNode.children[0];
@@ -70,7 +70,7 @@ const edit = (e)=>{
     let b = e.firstChild.classList;
     a.setAttribute("value", a.value);
 
-    if(a.hasAttribute("readonly")){
+    if(b.contains("fa-pen")){
         b.remove("fa-pen");
         b.add("fa-plus");
         a.removeAttribute("readonly")

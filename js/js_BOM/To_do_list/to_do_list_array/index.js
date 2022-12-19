@@ -26,7 +26,7 @@ const deleteTodo = (index) => {
 
 const renderTodoApp = () => {
   //AllTask array aar delgetsend list haruulna
-  tasks.innerHTML = "asd";
+  tasks.innerHTML = "";
   for (let i = 0; i < allTask.length; i++) {
     const item = `   
                 <div class="task">
