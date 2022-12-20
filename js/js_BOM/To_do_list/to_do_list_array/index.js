@@ -4,10 +4,7 @@ const inputText = document.getElementById("to-do-input");
 const pr = document.getElementById("pr");
 const a = document.getElementsByTagName("h3")[2];
 let b = 0;
-let allTask =[
-  {name:"JS", status: true, priority: "high"},
-  {name:"HTML", status: false, priority: "medium"}
-];
+let allTask =[];
 
 const addTodo = () => {
   // allTask array ruu ruu text iig nemne.
