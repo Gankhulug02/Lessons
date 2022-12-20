@@ -1,6 +1,8 @@
 const addBtn = document.getElementById("add");
 const taskList = document.getElementById("tasks");
 const inputText = document.getElementById("to-do-input");
+const a = document.getElementsByTagName("h3")[2];
+let b = 0;
 let allTask =[];
 
 const addTodo = () => {
@@ -52,19 +54,23 @@ const increment = () => {
   month = new Date().getMonth()+1;
   year = new Date().getFullYear();
   h3.innerHTML = `${year}:${month}:${day}`;
+  //Task
+  b = taskList.children.length
+  a.innerHTML = `${b} days left`
 };
-timer = setInterval(increment, 1000);
+timer = setInterval(increment, 10);
 
 //Buttons
 const check = (e)=>{
-    let a=e.parentNode.parentNode.children[0];
+    let a = e.parentNode.parentNode.children[0];
+    let i = Number(e.parentNode.children[2].attributes[1].value[11])
     a.classList.add("check");
 }
 const edit = (e)=>{
     let a = e.parentNode.parentNode.children[0];
     let b = e.firstChild.classList;
-    console.log(a)
-    a.setAttribute("value", a.value);
+    let i = Number(e.parentNode.children[2].attributes[1].value[11])
+    allTask[i] = a.value
 
     if(a.hasAttribute("readonly")){
         b.remove("fa-pen");
@@ -75,4 +81,5 @@ const edit = (e)=>{
         b.add("fa-pen")
         a.setAttribute("readonly", true)
     }
+    
 }
