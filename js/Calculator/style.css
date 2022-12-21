@@ -11,16 +11,16 @@ body{
   border-radius: 20px;
   margin: 0 auto;
   text-align: center;
-  box-shadow:0px 0px 100px rgba(0, 255, 204, 0.6);
+  box-shadow:0px 0px 100px rgb(1, 255, 255);
+  background: linear-gradient(to right, #00C9FF,#92FE9D);
 }
 
-.display {
+#display {
   padding-right: 10px;
   font-size: 3em;
   text-align: end;
   line-height: 80px;
-  background: rgba(135, 135, 135, 0.509);
-  /* border: 1px solid #999; */
+  background: linear-gradient(to right, #00C9FF,#92FE9D);
   width: 100%;
   height: 80px;
   border-top-left-radius: 20px;
@@ -36,8 +36,9 @@ body{
   width: 25%;
   height: 70px;
   line-height: 50px;
-  background: rgba(2, 251, 243, 0.979);
-  border: 0px solid rgb(81, 81, 81);
+  /* background: rgba(2, 251, 243, 0.979); */
+  background: transparent;
+  border: 0px solid rgb(255, 255, 255);
   box-sizing: border-box;
   float: left;
   margin: 0;
@@ -45,7 +46,7 @@ body{
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
-.zero{
+.width-50{
     width: 50%;
     border-bottom-left-radius: 20px;
 }
@@ -53,13 +54,12 @@ body{
     border-bottom-right-radius: 20px;
 }
 .operator {
-  background: rgb(94, 255, 0);
+  background: rgba(94, 255, 0, 0);
   font-size: 2em;
 }
 .button:hover {
-  background: #aaa;
+  background: rgba(255, 255, 255, 0.14);
 }
-
 .button:active {
-  background: #ccc;
+  background: rgba(255, 255, 255, 0.678);
 }
