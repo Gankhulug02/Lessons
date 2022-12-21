@@ -6,3 +6,16 @@ for(let i=0; i<numbersBtn.length; i++){
     display.textContent += numbersBtn[i].textContent;
   })
 }
+
+const tasks = [
+  {value: 1},
+  {value: 2},
+  {value: 3},
+  {value: 4},
+  {value: 5},
+  {value: 6},
+]
+const[task] = tasks
+console.log(task)
+const {value} = task
+console.log(value)
