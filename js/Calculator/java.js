@@ -1,21 +1,22 @@
 let numbersBtn = document.getElementsByClassName("number");
 let display = document.getElementById("display")
+let plusBtn = document.getElementsByClassName("operator")[3];
+let equalsBtn = document.getElementsByClassName("operator")[4];
+let minusBtn = document.getElementsByClassName("operator")[2];
+let timesBtn = document.getElementsByClassName("operator")[1];
+let orBtn = document.getElementsByClassName("operator")[0];
+
+
 
 for(let i=0; i<numbersBtn.length; i++){
     numbersBtn[i].addEventListener("click", ()=>{
     display.textContent += numbersBtn[i].textContent;
+    console.log(display.textContent)
   })
 }
 
-const tasks = [
-  {value: 1},
-  {value: 2},
-  {value: 3},
-  {value: 4},
-  {value: 5},
-  {value: 6},
-]
-const[task] = tasks
-console.log(task)
-const {value} = task
-console.log(value)
+let plus = () =>{
+  console.log(typeof display.textContent)
+}
+
+plusBtn.addEventListener("click", plus); 
