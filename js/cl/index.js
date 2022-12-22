@@ -91,8 +91,4 @@ const calculator = {
       inputDecimal(target.value);
       updateDisplay();
       return;
-    }
-  
-    if (target.classList.contains('all-clear')) {
-     
-  
+    }}
