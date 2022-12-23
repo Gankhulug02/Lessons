@@ -18,7 +18,7 @@ body{
   background-image: url(https://images.unsplash.com/photo-1536152470836-b943b246224c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80);
 }
 
-#display {
+.previous-operand {
   padding-right: 10px;
   font-size: 1.5em;
   text-align: end;
@@ -33,7 +33,7 @@ body{
   white-space: nowrap;
   /* background-color: rgb(21, 0, 255); */
 }
-#display2 {
+.current-operand {
   padding-right: 10px;
   font-size: 1.5em;
   text-align: end;
@@ -43,7 +43,7 @@ body{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background-color: #ff0040;
+  /* background-color: #ff0040; */
 }
 .button {
   font-size: 1.5em;
@@ -65,10 +65,6 @@ body{
 }
 .equals{
     border-bottom-right-radius: 20px;
-}
-.operator {
-  background: rgba(94, 255, 0, 0);
-  font-size: 2em;
 }
 .button:hover {
   background: rgba(255, 255, 255, 0.14);
