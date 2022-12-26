@@ -20,8 +20,10 @@ async function getdata() {
     data.products.forEach((product) => {
       const item = `
       <div class="background">
-      <img src=" ${product.thumbnail}" alt="">
-      ${product.brand}: ${product.title} - $${product.price}
+        <img src=" ${product.thumbnail}" alt="">
+        <div class="text">
+        ${product.brand}: ${product.title} - $${product.price}
+        </div>
       </div>
       `;
       container.innerHTML += item;
