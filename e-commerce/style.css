@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+*{
+    font-family: 'Inter', sans-serif;
+}
+body{
+    overflow: hidden;
+    padding: 5px 15px;
+}
+/* nav{
+    align-items: center;
+} */
+.nav-top{
+    align-items: center;
+}
+nav button{
+    padding: 10px;
+    background-color: transparent;
+    font-size: smaller;
+    border: 1px solid;
+    border-radius: 8px;
+    color: rgb(0, 102, 255);
+}
+.nav-bottom{
+    color: grey;
+}
+.nav-bottom p{
+    font-size: small;
+    padding: 8px ;
+}
+.nav-bottom p:hover{
+    border-radius: 8px;
+    background-color: rgba(71, 168, 248, 0.162);
+}
+.search{
+    min-width: 50%;
+}
+.search input{
+    background-color: rgba(128, 128, 128, 0.181);
+    height: 30px;
+}
+main{
+    width: 80%;
+    margin: 0px auto;
+}
+.card:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.211);
+}
+.img{
+    height: 50%;
+    overflow: hidden;
+}
+.card img{
+    height: 200px;
+}
+.discount{
+    font-size: small;
+    width: fit-content;
+    color: rgb(3, 151, 77);
+    background-color: rgba(0, 255, 128, 0.303);
+}
+.price{
+    font-weight: 900;
+}
+.card-text{
+    color: grey;
+    font-size: smaller;
+}
+.card button{
+    padding: 10px;
+    background-color: transparent;
+    font-size: smaller;
+    border: 1px solid;
+    border-radius: 8px;
+    color: rgb(0, 102, 255);
+}
+.card button:hover{
+    background-color: rgba(209, 208, 208, 0.248);
+}
+
+.sidebar{
+    position: absolute;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(226, 226, 19);
+    right: 0px;
+    top: 50px;
+    transition: all 1.5s;
+}
+.sags2{
+    right: -200px;
+}
