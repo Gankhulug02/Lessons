@@ -69,7 +69,7 @@ const deleteTodo = (index) => {
 const check = (e)=>{
     let a = e.parentNode.parentNode.children[0];
     let i = Number(e.parentNode.children[2].attributes[1].value[11])
-    console.log(allTask)
+
     if(allTask[i].status == true){
       allTask[i].status = false
     } else{

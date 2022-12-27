@@ -5,6 +5,7 @@ const productsList = document.querySelector(".items");
 const items = document.querySelector(".sidebar-items")
 let sagsButton = document.querySelector(".sagsBtn")
 let sidebar = document.querySelector(".sidebar")
+let sidebarUstgahBtn = document.querySelectorAll("button")[2]
 let allProducts = [] ;
 
 const getProducts = async () => {
@@ -50,55 +51,84 @@ const displayProduct = () => {
 }
 displayProduct()
 
+//sagsandeer darahaar hide unhide hiih button
+
 sags = () => {
     sidebar.classList.toggle("sags2")
 }
 sagsButton.addEventListener("click", sags)
 
-//Sidebar iin innerHTML nemeh function
-const itemsnemeh = () => {
-    let item = `<div class="sidebar-item d-flex flex-col justify-content-around">
-            <div class="count d-flex flex-column justify-content-around">
-                <button onclick="countNemeh(this)">+</button>
-                <p class="m-0 text-center">1</p>
-                <button onclick="countHasah(this)">-</button>
-            </div>
-            <img src="../image/e-commerce/iphone9 1ip9.svg" alt="" class="w-25">
-            <div class="sidebar-item-title w-25">
-                <p class="text-truncate">iPhone 9</p>
-                <p class="m-0">500</p>
-                <p class="m-0 text-secondary">1</p>
-            </div>
-            <p class="my-auto h-25">$12345</p>
-            <button class="border-0 bg-white text-secondary"><i class="fa fa-x"></i></button>
-        </div>`
-    items.innerHTML += item
-}
+//sidebar dotorh x button
+sidebarUstgahBtn.addEventListener("click", sags)
+
+//Sidebart baraa nemdeg button
 
 const nemeh = (e) => {
-    console.log("asd")
+    let a = e.parentNode.parentNode.parentNode.children;
+    let thumbnail = a[0].children[0].src;
+    let price = a[1].children[1].children[0].innerHTML;
+    let title = a[1].children[0].innerHTML;
+    console.log(title)
+    
+    if(price[0] == "$"){
+        price = Number(price.slice(1));
+   }
+
+    const itemsnemeh = () => {
+        let item = `<div class="sidebar-item d-flex flex-col justify-content-around">
+                <div class="count d-flex flex-column justify-content-around">
+                    <button onclick="countNemeh(this)">+</button>
+                    <p class="m-0 text-center">1</p>
+                    <button onclick="countHasah(this)">-</button>
+                </div>
+                <img src="${thumbnail}" alt="" class="w-25">
+                <div class="sidebar-item-title w-25">
+                    <p class="text-truncate">${title}</p>
+                    <p class="m-0">$${price}</p>
+                    <p class="m-0 text-secondary">1</p>
+                </div>
+                <p class="my-auto h-25">$${price}</p>
+                <button class="border-0 bg-white text-secondary"><i class="fa fa-x"></i></button>
+            </div>
+            <hr>
+            `
+        items.innerHTML += item
+    }
     itemsnemeh()
 }
-//Sidebar iin count hiih buttonuud
+
+//Sidebar baraanii too nemdeg button
 
 const countNemeh = (e) => {
-    a = e.parentNode.children[1];
-    b = e.parentNode.parentNode.children[2].children;
-    c = b[1];
-    d = e.parentNode.parentNode.children[3]
+    let a = e.parentNode.children[1];
+    let b = e.parentNode.parentNode.children[2].children;
+    let c = b[1];
+    let d = e.parentNode.parentNode.children[3]
+    let price = b[1].innerHTML;
+
+    if (price[0] == "$" ){
+        price = Number(price.slice(1));
+        console.log(price)
+    }
 
     a.innerHTML ++ ;
     b[2].innerHTML = a.innerHTML
-    d.innerHTML = "$" + b[1].innerHTML * b[2].innerHTML
+    d.innerHTML = "$" + price * b[2].innerHTML
 }
 const countHasah = (e) => {
-    a = e.parentNode.children[1];
-    b = e.parentNode.parentNode.children[2].children;
-    c = b[1];
-    d = e.parentNode.parentNode.children[3]
+    let a = e.parentNode.children[1];
+    let b = e.parentNode.parentNode.children[2].children;
+    let c = b[1];
+    let d = e.parentNode.parentNode.children[3]
+    let price = b[1].innerHTML;
+
+    if (price[0] == "$" ){
+        price = Number(price.slice(1));
+        console.log(price)
+    }
 
     a.innerHTML -- ;
     b[2].innerHTML = a.innerHTML
-    d.innerHTML = "$" + b[1].innerHTML * b[2].innerHTML
+    d.innerHTML = "$" + price * b[2].innerHTML
 }
 

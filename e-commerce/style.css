@@ -5,7 +5,7 @@
     margin: 0px;
 }
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 5px 15px;
 }
 /* nav{
@@ -52,7 +52,11 @@ main{
     overflow: hidden;
 }
 .card img{
-    height: 200px;
+    width: 100%;
+    aspect-ratio: 3/2;
+    /* height: 250px; */
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
 }
 .discount{
     font-size: small;
@@ -81,17 +85,17 @@ main{
 
 .sidebar{
     position: absolute;
-    height: 100vh;
+    min-height: 100vh;
     z-index: 2;
     width: 400px;
     box-shadow: -5px 0px 10px rgba(91, 91, 91, 0.303);
     background-color: rgb(255, 255, 255);
     right: 0;
-    top: 10%;
+    top: 0;
     transition: all 1s;
 }
 .sags2{
-    right: 0px;
+    right: -100%;
 }
 .sidebar-top{
     padding: 5px 15px 0px 15px ;
@@ -111,6 +115,11 @@ main{
 }
 .sidebar-item-title :nth-child(3){
     font-size: 0.8rem;
+}
+.sidebar-item img{
+    /* width: 20%; */
+    /* aspect-ratio: 3/2; */
+    object-fit: contain;
 }
 .sidebar-item p{
     font-size: 1rem;
