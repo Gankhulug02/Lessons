@@ -5,8 +5,8 @@
     margin: 0px;
 }
 body{
-    /* overflow: hidden; */
-    padding: 5px 15px;
+    overflow-x: hidden;
+    padding: 20px 15px;
 }
 /* nav{
     align-items: center;
@@ -54,9 +54,7 @@ main{
 .card img{
     width: 100%;
     aspect-ratio: 3/2;
-    /* height: 250px; */
     object-fit: contain;
-    /* mix-blend-mode: color-burn; */
 }
 .discount{
     font-size: small;
@@ -90,12 +88,26 @@ main{
     width: 400px;
     box-shadow: -5px 0px 10px rgba(91, 91, 91, 0.303);
     background-color: rgb(255, 255, 255);
-    right: 0;
+    right: -400px;
     top: 0;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .sags2{
-    right: -100%;
+    right: 0px;
+}
+.burtgel{
+    position: relative;
+}
+.burtgel p{
+    color: white;
+    background-color: rgb(13, 98, 244);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding: 5px 0px 0px 10px;
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
 }
 .sidebar-top{
     padding: 5px 15px 0px 15px ;
@@ -109,16 +121,24 @@ main{
 .sidebar-top button:hover{
     color: rgb(74, 74, 74);
 }
+.sidebar-item{
+    height: 100px;
+    margin-bottom: 20px;
+    /* border-radius: 8px; */
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(7, 212, 160);
+}
 .sidebar-item-title :nth-child(2){
-    font-size: 0.8rem;
+    font-weight: 700;
+    font-size: 1rem;
     color: rgb(6, 63, 250);
 }
 .sidebar-item-title :nth-child(3){
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 .sidebar-item img{
-    /* width: 20%; */
-    /* aspect-ratio: 3/2; */
+    max-width: 150px;
+    aspect-ratio: 3/2;
     object-fit: contain;
 }
 .sidebar-item p{

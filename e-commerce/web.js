@@ -3,7 +3,7 @@ console.log("ECOMMERCE")
 //all vaiables
 const productsList = document.querySelector(".items");
 const items = document.querySelector(".sidebar-items")
-let sagsButton = document.querySelector(".sagsBtn")
+let cartCount = document.querySelector(".cartCount")
 let sidebar = document.querySelector(".sidebar")
 let sidebarUstgahBtn = document.querySelectorAll("button")[2]
 let allProducts = [] ;
@@ -41,7 +41,7 @@ const displayProduct = () => {
                                 <i class="fa fa-star"></i>
                                 <p>${product.rating}</p>
                             </div>
-                            <button class="text-end "onclick="nemeh(this)">Нэмэх</button>
+                            <button class="text-end " onclick="nemeh(this)">Нэмэх</button>
                         </div>
                         </div>
                     </div>
@@ -52,11 +52,12 @@ const displayProduct = () => {
 displayProduct()
 
 //sagsandeer darahaar hide unhide hiih button
-
 sags = () => {
     sidebar.classList.toggle("sags2")
 }
-sagsButton.addEventListener("click", sags)
+
+// sagsButton.addEventListener("click", sags)
+const sagsBtn = () => sags();
 
 //sidebar dotorh x button
 sidebarUstgahBtn.addEventListener("click", sags)
@@ -68,7 +69,6 @@ const nemeh = (e) => {
     let thumbnail = a[0].children[0].src;
     let price = a[1].children[1].children[0].innerHTML;
     let title = a[1].children[0].innerHTML;
-    console.log(title)
     
     if(price[0] == "$"){
         price = Number(price.slice(1));
@@ -81,7 +81,7 @@ const nemeh = (e) => {
                     <p class="m-0 text-center">1</p>
                     <button onclick="countHasah(this)">-</button>
                 </div>
-                <img src="${thumbnail}" alt="" class="w-25">
+                <img src="${thumbnail}">
                 <div class="sidebar-item-title w-25">
                     <p class="text-truncate">${title}</p>
                     <p class="m-0">$${price}</p>
@@ -89,12 +89,13 @@ const nemeh = (e) => {
                 </div>
                 <p class="my-auto h-25">$${price}</p>
                 <button class="border-0 bg-white text-secondary"><i class="fa fa-x"></i></button>
-            </div>
-            <hr>
+                </div>
             `
         items.innerHTML += item
     }
     itemsnemeh()
+    
+    cartCount.innerHTML = items.children.length
 }
 
 //Sidebar baraanii too nemdeg button
@@ -104,7 +105,7 @@ const countNemeh = (e) => {
     let b = e.parentNode.parentNode.children[2].children;
     let c = b[1];
     let d = e.parentNode.parentNode.children[3]
-    let price = b[1].innerHTML;
+    let price = b[1].innerHTML ;
 
     if (price[0] == "$" ){
         price = Number(price.slice(1));
