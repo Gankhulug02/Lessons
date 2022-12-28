@@ -82,7 +82,7 @@ main{
 }
 
 .sidebar{
-    position: absolute;
+    position: sticky;
     min-height: 100vh;
     z-index: 2;
     width: 400px;

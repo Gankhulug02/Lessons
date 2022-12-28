@@ -2,10 +2,10 @@ console.log("ECOMMERCE");
 // All variables and DOM
 const productList = document.querySelector(".items");
 const cartList = document.querySelector(".sidebar-items");
+const cartCount = document.querySelector(".cartCount");
+const guudegBaraa = document.querySelector(".guudeg-baraa")
 let sidebar = document.querySelector(".sidebar")
 let sidebarUstgahBtn = document.querySelectorAll("button")[2]
-// const productsEvent = document.querySelector(".productsEvent");
-const cartCount = document.querySelector(".cartCount");
 let allProducts = [];
 let cartProducts = [];
 
@@ -41,11 +41,27 @@ const displayProduct = () => {
   });
 };
 
+const guudegBaraaDisplay = () => {
+  guudegBaraa.innerHTML = "";
+  console.log("asd")
+  allProducts.forEach((product, idx) => {
+    const productItem = ` <div class="card text-end" >
+                              <img class="card-img-top" src="${product.thumbnail}" alt="Card image cap">
+                              <div class="card-body">
+                                <p class="card-title h-50 overflow-hidden">${product.description}</p>
+                                <p class="price"> $${product.price}</p>
+                              </div>
+                            </div>`
+    guudegBaraa.innerHTML += productItem;
+  });
+};
+
 const getProducts = async () => {
   const response = await fetch("https://dummyjson.com/products");
   const data = await response.json();
   allProducts = data.products;
   displayProduct();
+  guudegBaraaDisplay();
   displayCart();
 };
 
@@ -115,7 +131,9 @@ const countHasah = (e) => {
   let d = e.parentNode.parentNode.children[3]
   console.log(d.innerHTML)
 
-  a.innerHTML ++ ;
+  if(a.innerHTML > 0){
+    a.innerHTML -- ;
+  }
   b[2].innerHTML = a.innerHTML
   d.innerHTML = "$" + product.price * b[2].innerHTML
 }
