@@ -31,7 +31,7 @@ const displayProduct = () => {
         <td>${product.category}</td>
         <td>${product.isSpecial}</td>
         <td><img src="${product.imageURL}" alt="" class="w-25"></td>
-        <td>
+        <td class="w-25">
         <button class="btn btn-success">Edit</button>
         <button class="btn btn-danger">Delete</button>
         </td>
