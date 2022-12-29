@@ -19,25 +19,28 @@ nav button{
     background-color: transparent;
     font-size: 20px;
     border: none;
-    /* border: 1px solid; */
-    /* border-radius: 8px; */
-    color: rgb(0, 64, 255);
+    color: orange;
 }
 .nav-bottom{
     overflow-x: scroll;
     color: grey;
 }
-.nav-bottom p{
-    display: flex;
-    flex-wrap: nowrap;
-    font-size: small;
-    width: fit-content;
-    padding: 5px ;
-}
-.nav-bottom p:hover{
+.nav-bottom button{
+    margin: 10px 0px 10px 0px;
+    color: rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+    background-color: rgba(206, 206, 206, 0.2);
     border-radius: 8px;
-    background-color: rgba(71, 168, 248, 0.162);
+    /* border: 1px solid grey; */
+    width: 600px !important;
+    font-size: 15px;
 }
+
+.nav-bottom button:hover{
+    color: white;
+    background-color: rgb(255, 176, 29);
+}
+
 .search{
     min-width: 50%;
 }
@@ -107,7 +110,7 @@ nav button{
 }
 .burtgel p{
     color: white;
-    background-color: rgb(13, 98, 244);
+    background-color: orange;
     position: absolute;
     font-size: 0.7rem;
     width: 20px;
@@ -140,7 +143,7 @@ nav button{
 .sidebar-item-title :nth-child(2){
     font-weight: 700;
     font-size: 1rem;
-    color: rgb(6, 63, 250);
+    color: orange;
 }
 .sidebar-item-title :nth-child(3){
     font-size: 1rem;

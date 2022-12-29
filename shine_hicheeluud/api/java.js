@@ -4,6 +4,9 @@ const productList = document.querySelector(".items");
 const cartList = document.querySelector(".sidebar-items");
 const cartCount = document.querySelector(".cartCount");
 const guudegBaraa = document.querySelector(".guudeg-baraa")
+const categoryList = document.querySelector(".nav-bottom")
+const cartPrice = document.querySelector(".cartPrice");
+
 let sidebar = document.querySelector(".sidebar")
 let sidebarUstgahBtn = document.querySelectorAll("button")[2]
 let allProducts = [];
@@ -32,7 +35,7 @@ const displayProduct = () => {
                                     <i class="fa fa-star"></i>
                                     <p>${product.rating}</p>
                                 </div>
-                                <button class="text-end " onclick="addCart(${idx})">Нэмэх</button>
+                                <button class="text-end " onclick="addCart(${product.id})">Нэмэх</button>
                             </div>
                             </div>
                         </div>
@@ -40,6 +43,37 @@ const displayProduct = () => {
     productList.innerHTML += productItem;
   });
 };
+
+
+
+const displayCategory = () => {
+  categoryList.innerHTML = " ";
+  allCategories.forEach((category) => {
+    const categoryItem = `
+      <button onclick="getCategoryProduct('${category}')">${category}</button>
+    `;
+    categoryList.innerHTML += categoryItem;
+  });
+};
+
+const getCategories = async () => {
+  const response = await fetch("https://dummyjson.com/products/categories");
+  const data = await response.json();
+  allCategories = data;
+  displayCategory();
+};
+
+const getCategoryProduct = async (category) => {
+  console.log(category);
+  const response = await fetch(
+    `https://dummyjson.com/products/category/${category}`
+  );
+  const data = await response.json();
+  allProducts = data.products;
+  displayProduct();
+};
+
+
 
 const guudegBaraaDisplay = () => {
   guudegBaraa.innerHTML = "";
@@ -65,6 +99,7 @@ const getProducts = async () => {
   displayCart();
 };
 
+getCategories();
 getProducts();
 
 //sagsandeer darahaar hide unhide hiih button
@@ -79,16 +114,35 @@ const sagsBtn = () => sags();
 sidebarUstgahBtn.addEventListener("click", sags)
 
 
-const addCart = (idx) => {
-  cartProducts.push(allProducts[idx]);
+
+const addCart = (productId) => {
+  const findIdx = cartProducts.findIndex((item) => item.id === productId);
+  if (findIdx > -1) {
+    //ene baraa cartProducts array dotor bval nemehgui harin baraanii too hemjee nemne
+    cartProducts[findIdx].count += 1;
+  } else {
+    //bhgui bol baraag nemne
+    const findIndex = allProducts.findIndex((item) => item.id === productId);
+
+    const newBaraa = { count: 1, ...allProducts[findIndex] };
+    cartProducts.push(newBaraa);
+  }
   cartCount.innerText = cartProducts.length;
   displayCart();
+};
+
+const calculateCartPrice = () => {
+  let sumPrice = 0;
+  for (product of cartProducts) {
+    sumPrice = sumPrice + product.price * product.count;
+  }
+  return sumPrice;
 };
 
 const displayCart = () => {
   cartList.innerHTML = " ";
   for (product of cartProducts) {
-    const cartItem = `<div class="sidebar-item d-flex flex-col justify-content-around">
+    const cartItem = `<div class="sidebar-item  d-flex flex-col justify-content-around">
                           <div class="count d-flex flex-column justify-content-around">
                               <button onclick="countNemeh(this)">+</button>
                               <p class="m-0 text-center">1</p>
@@ -106,6 +160,8 @@ const displayCart = () => {
                       `
     cartList.innerHTML += cartItem;
   }
+  const totalCartPrice = calculateCartPrice();
+  cartPrice.innerText = `$${totalCartPrice}`;
 };  
 
 
