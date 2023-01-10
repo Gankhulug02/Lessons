@@ -6,7 +6,7 @@
 }
 body{
     overflow-x: hidden;
-    padding: 20px 15px;
+    /* padding: 20px 15px; */
 }
 /* nav{
     align-items: center;
@@ -17,22 +17,30 @@ body{
 nav button{
     padding: 10px;
     background-color: transparent;
-    font-size: smaller;
-    border: 1px solid;
-    border-radius: 8px;
-    color: rgb(0, 102, 255);
+    font-size: 20px;
+    border: none;
+    color: orange;
 }
 .nav-bottom{
+    overflow-x: scroll;
     color: grey;
 }
-.nav-bottom p{
-    font-size: small;
-    padding: 8px ;
-}
-.nav-bottom p:hover{
+.nav-bottom button{
+    margin: 10px 0px 10px 0px;
+    color: rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+    background-color: rgba(206, 206, 206, 0.2);
     border-radius: 8px;
-    background-color: rgba(71, 168, 248, 0.162);
+    /* border: 1px solid grey; */
+    width: 600px !important;
+    font-size: 15px;
 }
+
+.nav-bottom button:hover{
+    color: white;
+    background-color: rgb(255, 176, 29);
+}
+
 .search{
     min-width: 50%;
 }
@@ -40,12 +48,13 @@ nav button{
     background-color: rgba(128, 128, 128, 0.181);
     height: 30px;
 }
-main{
-    width: 80%;
-    margin: 0px auto;
+.items{
+    margin: 0% auto;
+    width: 90%;
 }
 .card:hover {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.211);
+    border: 1px solid black;
+    /* box-shadow: 5px 2px 5px rgba(95, 95, 95, 0.577); */
 }
 .img{
     height: 50%;
@@ -78,11 +87,11 @@ main{
     color: rgb(0, 102, 255);
 }
 .card button:hover{
-    background-color: rgba(209, 208, 208, 0.248);
+    background-color: rgba(209, 208, 208, 0.416);
 }
 
 .sidebar{
-    position: sticky;
+    position: absolute;
     min-height: 100vh;
     z-index: 2;
     width: 400px;
@@ -97,17 +106,20 @@ main{
 }
 .burtgel{
     position: relative;
+    padding: 10px;
 }
 .burtgel p{
     color: white;
-    background-color: rgb(13, 98, 244);
+    background-color: orange;
     position: absolute;
-    width: 30px;
-    height: 30px;
-    padding: 5px 0px 0px 10px;
+    font-size: 0.7rem;
+    width: 20px;
+    height: 20px;
+    padding: 0px 0px 0px 7px;
+    margin: 0px auto;
     border-radius: 50%;
-    top: -15px;
-    right: -15px;
+    top: 10px;
+    right: 10px;
 }
 .sidebar-top{
     padding: 5px 15px 0px 15px ;
@@ -131,7 +143,7 @@ main{
 .sidebar-item-title :nth-child(2){
     font-weight: 700;
     font-size: 1rem;
-    color: rgb(6, 63, 250);
+    color: orange;
 }
 .sidebar-item-title :nth-child(3){
     font-size: 1rem;
@@ -152,4 +164,19 @@ main{
     background-color: transparent;
     border-radius: 5px;
     font-size: 15px;
+}
+.carousel-inner{
+    object-fit: contain;
+}
+.guudeg-baraa{
+    overflow-x: scroll;
+    gap: 10px;
+    width: 76.8%;
+}
+.guudeg-baraa .card{
+    min-width: 250px !important; 
+}
+.guudeg-baraa .card-body{
+    height: 150px !important;
+    padding-bottom: 0px;
 }
